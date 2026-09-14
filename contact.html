@@ -12,14 +12,14 @@
     document.documentElement.setAttribute("data-site-theme", t);
   } catch (e) {}
 })();</script>
-<title>Makanjuola Oluwanifemi (Nancy) — Digital Creator Growth Specialist</title>
+<title>Contact Me — Makanjuola Oluwanifemi (Nancy)</title>
 <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
-<meta name="description" content="Makanjuola Oluwanifemi, known as Nancy, helps YouTubers, Twitch streamers, and content creators improve their online presence.">
+<meta name="description" content="Get in touch with Makanjuola Oluwanifemi (Nancy) about YouTube and Twitch channel growth services.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -34,11 +34,11 @@
 
   <div class="header-controls">
   <nav class="nav-desktop" aria-label="Primary">
-    <a href="index.html" aria-current="page">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="services.html">Services</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html" class="nav-cta">Contact Me</a>
+    <a href="contact.html" class="nav-cta" aria-current="page">Contact Me</a>
   </nav>
 
     <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
@@ -53,72 +53,75 @@
 </header>
 
 <nav id="mobileNav" class="nav-mobile" aria-label="Mobile" hidden>
-  <a href="index.html" aria-current="page">Home</a>
+  <a href="index.html">Home</a>
   <a href="about.html">About Me</a>
   <a href="services.html">Services</a>
   <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="mobile-contact">Contact Me</a>
+  <a href="contact.html" class="mobile-contact" aria-current="page">Contact Me</a>
 </nav>
 
 <main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow">
-        <i class="fa-solid fa-circle" aria-hidden="true"></i> Digital Creator Growth Specialist
+  <!-- CONTACT -->
+  <section class="contact" id="contactSection">
+    <div class="contact-intro">
+      <span class="section-kicker">Contact</span>
+      <h1>Let's Work Together</h1>
+      <p>Have a project in mind? Tell me what you need help with.</p>
+      <div class="contact-identity">
+        <div class="brand-name">Makanjuola Oluwanifemi</div>
+        <div class="brand-alias">Known as Nancy</div>
       </div>
-      <span class="hero-name">Makanjuola Oluwanifemi</span>
-      <span class="hero-alias">Known as Nancy</span>
-      <h1>Helping Creators Grow, Improve and Stand Out</h1>
-      <p class="lead">I help YouTubers, Twitch streamers, and content creators improve their online presence through promotion, channel optimization, monetization guidance, professional channel setup, and video editing.</p>
-      <div class="hero-ctas">
-        <a href="services.html" class="btn btn-primary">View My Services</a>
-        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-photo-frame">
-        <div class="hero-photo-pulse" aria-hidden="true"></div>
-        <div class="hero-photo">
-          <img src="assets/profile.jpg" alt="Makanjuola Oluwanifemi (Nancy)">
+      <div class="contact-platforms">
+        <span class="contact-platforms-label">Hire Me On</span>
+        <div class="contact-platform-links">
+          <a href="https://www.fiverr.com/users/makanjuola_n/manage_gigs?current_filter=active" target="_blank" rel="noopener noreferrer" class="platform-link">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i> Fiverr
+          </a>
+          <a href="https://kwork.com/new?draft_id=54512697&lang=en" target="_blank" rel="noopener noreferrer" class="platform-link">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i> Kwork
+          </a>
+          <a href="https://www.upwork.com/nx/find-work/best-matches" target="_blank" rel="noopener noreferrer" class="platform-link">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i> Upwork
+          </a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery">
-    <div class="gallery-marquee">
-      <div class="gallery-track" id="galleryTrack"></div>
+    <div class="contact-form-wrap">
+      <div id="contactSuccess" class="contact-success" hidden>
+        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+        <h3>Message received</h3>
+        <p>Thanks for reaching out &mdash; I'll be in touch soon.</p>
+      </div>
+      <!-- Demo only: shows a local success message via script.js. To connect
+           a real form service (e.g. Formspree, Netlify Forms), add
+           action="..." method="POST" here and update the submit handler. -->
+      <form id="contactForm" class="contact-form">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="service">Select a Service</label>
+          <select id="service" name="service"></select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required rows="4" placeholder="Tell me about your channel..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- CREATOR RESULTS -->
-  <section class="stats">
-    <div class="section-head">
-      <span class="section-kicker">By The Numbers</span>
-      <h2>Creator Results</h2>
-      <p>Real numbers. Real progress. Data that matters.</p>
-    </div>
-    <div class="stats-grid" id="statsGrid"></div>
-    <p class="stats-disclaimer">Replace these figures with your verified results.</p>
-  </section>
-
-  <!-- HOME CTA -->
-  <section class="cta-banner cta-banner-gradient">
-    <h2>Want to Grow Your Channel?</h2>
-    <p>Let's discuss your goals and find the right strategy for your YouTube or Twitch channel.</p>
-    <a href="contact.html" class="btn btn-primary">Get Started</a>
-  </section>
-
-  <!-- FEATURED SERVICES -->
-  <section class="home-services">
-    <div class="section-head">
-      <span class="section-kicker">Services</span>
-      <h2>Ways I Can Help</h2>
-      <p>A quick look at what I offer &mdash; see the full list and pricing on the Services page.</p>
-    </div>
-    <div class="gcard-grid" id="homeServicesGrid"></div>
+  <!-- CONTACT CTA -->
+  <section class="cta-banner cta-banner-alt">
+    <h2>Ready to Take the Next Step?</h2>
+    <p>Let's talk about your goals and find the right solution for your channel.</p>
+    <a href="#contactSection" class="btn btn-primary">Get Started</a>
   </section>
 </main>
 
@@ -129,11 +132,11 @@
     <div class="brand-alias">Known as Nancy</div>
   </div>
   <nav class="footer-nav" aria-label="Footer">
-    <a href="index.html" aria-current="page">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
     <a href="services.html">Services</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact Me</a>
+    <a href="contact.html" aria-current="page">Contact Me</a>
   </nav>
   <div class="copyright">&copy; 2026 Makanjuola Oluwanifemi. All rights reserved.</div>
 </footer>
