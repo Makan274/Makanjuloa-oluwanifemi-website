@@ -106,7 +106,7 @@
         img.hidden = false;
         icon.hidden = true;
       });
-      img.src = "assets/image/gallery-" + n + ".jpg";
+      img.src = "assets/images/gallery-" + n + ".jpg";
     });
   }
 
